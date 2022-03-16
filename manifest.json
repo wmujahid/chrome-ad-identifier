@@ -4,10 +4,12 @@
   "version": "1.0",
   "manifest_version": 3,
   "background": {
-    "service_worker":"src/background"
+    "service_worker":"src/background.js"
   },
   "permissions": ["storage"],
-  "icons": { "16": "icon16.png",
-    "48": "icon48.png",
-   "128": "icon128.png" },
+  "icons": { 
+    "16": "./assets/images/icon16.png",
+    "48": "./assets/images/icon48.png",
+   "128": "./assets/images/icon128.png" 
+  }
 }
