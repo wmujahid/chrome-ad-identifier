@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .container {
+            min-width: 300px;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        #color-picker {
+            width: 100%;
+            margin: 10px 0 20px 0;
+            height: 40px;
+        }
+
+        #opacity {
+            width: 100%;
+        }
+
+        label {
+            width: 100%;
+            text-align: center;
+            font-size: 10px;
+            text-transform: uppercase;
+            font-weight: bold;
+
+        }
+
+        #message {
+            text-align: center;
+            font-size: 10px;
+            opacity: 50;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Change Highlight Color</h1>
+        <form id="form" action="">
+        <div>
+            <label>Background Color</label>
+            <input id="color-picker" type="color" value="#feffdd" />
+        </div>
+        <div>
+            <label>opacity (0-100)</label>
+            <input id="opacity" type="range" name="opacity" min="0" max="100" value="70">
+        </div>
+        </form>
+        <div id="message"></div>
+    </div>
+    <script src="popup.js"></script>
+</body>
+
+</html>

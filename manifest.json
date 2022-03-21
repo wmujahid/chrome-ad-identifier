@@ -1,5 +1,5 @@
 {
-  "name": "Chrome Ad Indentifier",
+  "name": "Google Chrome Ad Indentifier",
   "description": "An extension that higlights ads from google search results.",
   "version": "1.0",
   "manifest_version": 3,
@@ -18,10 +18,18 @@
    "128": "./assets/images/icon128.png" 
   },
   "action": {
+    "default_title": "Google Chrome Ad Indentifier",
+    "default_popup": "popup.html",
     "default_icon": { 
       "16": "./assets/images/icon16-2.png",
       "48": "./assets/images/icon48-2.png",
      "128": "./assets/images/icon128-2.png" 
     }
-  }
+  },
+  "content_scripts": [{
+    "matches": [
+        "*://www.google.com/search*"
+    ],
+    "js": ["content.js"]
+}]
 }
